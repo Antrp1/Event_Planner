@@ -1,6 +1,24 @@
 const Product = require("../models/product");
 const router = require("express").Router();
 
+router.get("/", async (req, res) => {
+  try {
+    res.render("homepage");
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+router.get("/login", async (req, res) => {
+    try {
+      res.render("login")
+    } catch (err) {
+      console.log(err);
+    }
+});
+
+module.exports = router;
+
 // //GET request
 // exports.getProducts = (req, res) => {
 //     Product.findAll()
@@ -20,16 +38,3 @@ const router = require("express").Router();
 //         res.status(500).json({ message: 'Internal server error' });
 //     });
 // };
-
-router.get("/", async (req, res) => {
-  // TODO: Render template with Sequelize data
-  try {
-    res.render("homepage");
-  } catch (err) {
-    console.log(err);
-  }
-});
-
-
-
-module.exports = router;
