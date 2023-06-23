@@ -18,13 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(
-  express.static("assets", {
-    setHeaders: (res, path) => {
-      if (path.endsWith(".js")) {
-        res.setHeader("Content-Type", "text/javascript");
-      }
-    },
-  })
+  express.static("public")
 );
 
 app.use(routes);
