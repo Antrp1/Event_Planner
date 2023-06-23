@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/login", async (req, res) => {
+router.get("/products", async (req, res) => {
     try {
       res.render("login")
     } catch (err) {
