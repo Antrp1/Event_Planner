@@ -7,6 +7,7 @@
   padding: 20px;
   border-radius: 20px;
   position: relative;
+  
 }
 
 .title {
@@ -129,6 +130,10 @@
   }
 }
 
+.title::before {
+  transition: all 2s ease-in-out;
+}
+
 /* btn animation */
 
 .button {
@@ -192,3 +197,4 @@
 .type1:hover::before {
   transform: translateY(-50px) scale(0) rotate(120deg);
 }
+
