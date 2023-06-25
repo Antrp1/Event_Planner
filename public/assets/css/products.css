@@ -89,7 +89,7 @@ img {
 .hover-underline-animation:after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 85%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
