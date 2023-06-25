@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
 
 router.get("/products", async (req, res) => {
     try {
-      res.render("login")
+      res.render("products")
     } catch (err) {
       console.log(err);
     }
