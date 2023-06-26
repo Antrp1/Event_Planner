@@ -17,6 +17,14 @@ router.get("/products", async (req, res) => {
     }
 });
 
+router.get("/checkout", async (req, res) => {
+  try {
+    res.render("checkout");
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 module.exports = router;
 
 // //GET request
