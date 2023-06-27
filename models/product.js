@@ -49,5 +49,5 @@ Product.init(
 );
 
 
-module.exports = Products;
+module.exports = Product;
 
