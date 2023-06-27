@@ -2,9 +2,9 @@ const { Model, DataTypes } = require("sequelize");
 
 const sequelize = require("../config/connection.js");
 
-class Products extends Model {}
+class Product extends Model {}
 
-Products.init(
+Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -28,7 +28,7 @@ Products.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    in_stock: {
+    in_stock: { //do we need this?
         type: DataTypes.VIRTUAL,
         get: function () {
             return this.stock>0
@@ -44,8 +44,8 @@ Products.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "products",
+    modelName: "product",
   }
 );
 
-// module.exports = Product;
+module.exports = Product;
