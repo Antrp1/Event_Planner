@@ -48,4 +48,6 @@ Product.init(
   }
 );
 
-module.exports = Product;
+
+module.exports = Products;
+

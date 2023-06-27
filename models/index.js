@@ -1,6 +1,7 @@
-const User = require("./user"); // do we need this?
 
-const Product = require('./Product');
+const User = require("./user");
+const Product = require("./product");
 const Category = require('./Category');
 
-module.exports = { User };
+
+module.exports = { User, Product };
