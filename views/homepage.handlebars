@@ -32,9 +32,9 @@
         <div class="hidden lg:flex lg:gap-x-12">
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">ContactUs</a>
         </div>
-        <button class="box"> Button
-        </button>
+        <button id="box">Login</button>
         
+
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
       <div class="lg:hidden" role="dialog" aria-modal="true">
@@ -94,7 +94,10 @@
           <button class="button type1" id="showFormBtn"></button>
 
           {{!-- Create Account --}}
-          <div id="formContainer" style="display: none;" class="signup-form">
+          <div id="formContainer" style="display: none;" 
+          
+          class="signup-form">
+          <div style="display: none;" id="signupContainer">
             <form class="form border-dashed border-2 border-sky-500">
               <p class="title">Register </p>
               <p class="message">Signup now and get full access to our app. </p>
@@ -108,12 +111,12 @@
                   <span>Lastname</span>
                 </label>
               </div>
-
+            
               <label>
                 <input required="" placeholder="" type="email" class="input" id="email">
                 <span>Email</span>
               </label>
-
+            
               <label>
                 <input required="" placeholder="" type="password" class="input" id="password">
                 <span>Password</span>
@@ -121,37 +124,39 @@
               <button class="submit" type="submit">Submit</button>
               <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
             </form>
+          </div>
+
+            
 
             {{!-- Login form --}}
+            
             <div id="loginContainer" style="display: none;" class="login-form">
               <form class="form border-dashed border-2 border-sky-500">
                 <p class="title">Login </p>
                 <div class="flex">
-                <label>
-                  <input required="" placeholder="" type="email" class="input" id="loginEmail">
-                  <span>Email</span>
-                </label>
-                <label>
-                  <input required="" placeholder="" type="password" class="input" id="loginPassword">
-                  <span>Password</span>
-                </label>
-                <button class="submit" type="submit">Submit</button>
+                  <label>
+                    <input required="" placeholder="" type="email" class="input" id="loginEmail">
+                    <span>Email</span>
+                  </label>
+                  <label>
+                    <input required="" placeholder="" type="password" class="input" id="loginPassword">
+                    <span>Password</span>
+                  </label>
+                  <button class="submit" type="submit">Submit</button>
               </form>
-
+            </div>
+          </div>
+          <div
+            class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div
+              class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+              style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+          </div>
+        </div>
 
       </div>
-    </div>
-    <div
-      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-      aria-hidden="true">
-      <div
-        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-      </div>
-    </div>
-  </div>
-
-  </div>
 
 </body>
 <script src="/assets/js/script.js"></script>

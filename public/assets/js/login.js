@@ -5,14 +5,14 @@ const loginFormHandler = async (event) => {
   const password = document.querySelector("#loginPassword").value.trim();
 
   if (email && password) {
-    const response = await fetch('/products', {
+    const response = await fetch('/api/users/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
-      document.location.replace("/");
+      document.location.replace("/products");
     } else {
       alert('Failed to log in');
     }
