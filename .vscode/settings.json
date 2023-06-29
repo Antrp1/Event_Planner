@@ -1,0 +1,7 @@
+{
+    "editor.smoothScrolling": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "remote.downloadExtensionsLocally": true
+}
