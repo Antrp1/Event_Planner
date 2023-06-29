@@ -1,4 +1,8 @@
 document.getElementById("checkout").addEventListener("click", () => {
+  const items = new Map([
+    [1, { priceInCents: 10000, name: "Keyboard"}],
+    [2, { priceInCents: 20000, name: "Monitor"}],
+  ])
   console.log("ok");
   fetch("/checkout", {
     method: "POST",
@@ -6,7 +10,7 @@ document.getElementById("checkout").addEventListener("click", () => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      items: [],
+      items
     }),
   })
     .then((res) => {
