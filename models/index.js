@@ -13,4 +13,4 @@ const Category = require('./Category');
     onDelete: 'CASCADE',
   });
 
-module.exports = { Category, Product };
+module.exports = { User, Category, Product };
