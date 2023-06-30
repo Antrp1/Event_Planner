@@ -40,23 +40,6 @@ app.use(express.static("public"));
 
 app.use(routes);
 
-// app.post("/checkout", async (req, res) => {
-//   try {
-//     const session = await stripe.checkout.sessions.create({
-//     payment_method_types: ["card"],
-//     mode: "payment",
-//     success_url: `${process.env.SERVER_URL}/success.html`,
-//     cancel_url: `${process.env.SERVER_URL}/error.html`,
-//     })
-//     res.json({ url: session.url })
-//   } catch (e) {
-//     res.status(500).json({ error: e.message })
-//   }
-
-//   // res.redirect(303, session.url);
-// });
-
-
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });
