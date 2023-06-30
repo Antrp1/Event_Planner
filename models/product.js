@@ -21,13 +21,17 @@ Product.init(
       allowNull: false,
     },
     stock: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
-    category: {
-      type: DataTypes.STRING,
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id'
+      },
       allowNull: false,
-    },
+    },    
     in_stock: { //do we need this?
         type: DataTypes.VIRTUAL,
         get: function () {
