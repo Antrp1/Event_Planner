@@ -80,7 +80,7 @@ const productData = [
     category_id: 3,
     image_url: "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095298/Product%20Photos/6145c1d32e6ac8e63a46c912dc33c5bb_qrypd6.jpg"
   },
-    {
+  {
     product_name: 'Bose Noise Cancelling Headphones 700',
     price: 379.00,
     stock: '25',
@@ -92,7 +92,7 @@ const productData = [
     price: 379.00,
     stock: '25',
     category_id: 3,
-    image_url: "//insert url here"
+    image_url: "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688527707/Product%20Photos/136c356e-a18d-4aa7-bbec-515b2802082a.2f7333d860a9e8bf4c403ce55e49414c_mr8xx1.jpg"
   },
   {
     product_name: 'Apple AirPods Max',
