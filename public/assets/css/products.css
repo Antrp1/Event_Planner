@@ -65,6 +65,17 @@ a:hover::after {
   transition: 0.4s;
 }
 
+.product-card-m {
+  padding: 20px;
+  width: 300px;
+  min-height: px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 5px 5px 6px #dadada,
+    -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+}
+
 .product-card:hover {
   translate: 0 -10px;
 }
@@ -83,6 +94,15 @@ a:hover::after {
   box-shadow: inset 8px 8px 10px #c3c3c3,
     inset -8px -8px 10px #cfcfcf;
 }
+
+img {
+  min-height: 170px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3,
+    inset -8px -8px 10px #cfcfcf;
+}
+
 
 .card-body {
   margin: 13px 0 0 10px;
