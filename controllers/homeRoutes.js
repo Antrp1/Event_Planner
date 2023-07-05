@@ -1,7 +1,5 @@
 // const Product = require("../models/product");
-const stripe = require("stripe")(
-  "sk_test_51NOA4SDltZuFbXatKHv7ROPwdUQ13yVe8fsPhwFwjWsgWU1ElqQMIoLQMrG1tQm3ZDB9306j1BZbltPjKVTsfw7s006eHCJwKs"
-);
+
 const router = require("express").Router();
 const { Product } = require("../models");
 
