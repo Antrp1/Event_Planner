@@ -2,7 +2,7 @@ const { Model, DataTypes } = require("sequelize");
 
 const sequelize = require("../config/connection.js");
 
-class Product extends Model {}
+class Product extends Model { }
 
 Product.init(
   {
@@ -33,14 +33,17 @@ Product.init(
       allowNull: false,
     },    
     in_stock: { //do we need this?
-        type: DataTypes.VIRTUAL,
-        get: function () {
-            return this.stock>0
-        },
-        set(value) {
-      throw new Error('No in stock');
-    }
+      type: DataTypes.VIRTUAL,
+      get: function () {
+        return this.stock > 0
+      },
+      set(value) {
+        throw new Error('No in stock');
+      }
     },
+    image_url: {
+      type: DataTypes.STRING
+    }
   },
 
   {
