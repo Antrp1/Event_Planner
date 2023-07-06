@@ -15,10 +15,10 @@
         <nav>
             <h1>Logo</h1>
             <ul>
-                <li><a href="">Monitors</a></li>
-                <li><a href="">Keyboards</a></li>
-                <li><a href="">Headset</a></li>
-                <li><a href="">Mice</a></li>
+                <li><a href="#monitors">Monitors</a></li>
+                <li><a href="#keyboards">Keyboards</a></li>
+                <li><a href="#headset">Headset</a></li>
+                <li><a href="#mice">Mice</a></li>
             </ul>
             <a href="#" id="contact-nav"><button>Contact</button></a>
         </nav>
@@ -28,12 +28,12 @@
         <h1>Monitors</h1>
 
         <div class="product-container">
-            <div class="product-card-m">
+            <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.redd.it/pft4ldryozm51.jpg" alt="">
                 </div>
                 <div class="product-info">
-                    <p class="product-short-des">{{product product_description}} here..</p>
+                    <p class="product-short-des">{{product description}} here..</p>
                     <span class="price">$$</span>
                 </div>
                 <div class="mt-6 flex justify-center">
@@ -52,16 +52,17 @@
 
 
     {{!-- Monitors card --}}
+    <h1 id="monitors">Monitors</h1>
     <div style="display: flex; flex-wrap: wrap;">
     {{#each monitors as |monitor|}}
     <div class="product-container">
-        <div class="product-card-m">
+        <div class="product-card">
             <div class="product-image">
                 <img src="{{monitor.image_url}}">
             </div>
             <div class="product-nfo">
                 <p class="product-short-des">
-                    {{monitor.product_description}}
+                    {{monitor.description}}
                 </p>
                 <span class="price">{{monitor.price}}$</span>
             </div>
@@ -82,16 +83,17 @@
 
 
     {{!-- Keyboards card --}}
+    <h1 id="keyboards">Keyboards</h1>
     <div style="display: flex; flex-wrap: wrap;">
         {{#each keyboards as |keyboard|}}
         <div class="product-container">
-            <div class="product-card-m">
+            <div class="product-card">
                 <div class="product-image">
                     <img src="{{keyboard.image_url}}">
                 </div>
                 <div class="product-nfo">
                     <p class="product-short-des">
-                        {{keyboard.product_description}}
+                        {{keyboard.description}}
                     </p>
                     <span class="price">{{keyboard.price}}$</span>
                 </div>
@@ -110,17 +112,18 @@
         {{/each}}
     </div>
 
-    {{!-- Keyboards card --}}
+    {{!-- Headset card --}}
+    <h1 id="headset">Headsets</h1>
     <div style="display: flex; flex-wrap: wrap;">
         {{#each headsets as |headset|}}
         <div class="product-container">
-            <div class="product-card-m">
+            <div class="product-card">
                 <div class="product-image">
                     <img src="{{headset.image_url}}">
                 </div>
                 <div class="product-nfo">
                     <p class="product-short-des">
-                        {{headset.product_description}}
+                        {{headset.description}}
                     </p>
                     <span class="price">{{headset.price}}$</span>
                 </div>
@@ -140,16 +143,17 @@
     </div>
 
     {{!-- Mouse card --}}
+    <h1 id="mice">Mouse</h1>
     <div style="display: flex; flex-wrap: wrap;">
         {{#each mouse as |mice|}}
         <div class="product-container">
-            <div class="product-card-m">
+            <div class="product-card">
                 <div class="product-image">
                     <img src="{{mice.image_url}}">
                 </div>
                 <div class="product-nfo">
                     <p class="product-short-des">
-                        {{mice.product_description}}
+                        {{mice.description}}
                     </p>
                     <span class="price">{{mice.price}}$</span>
                 </div>
