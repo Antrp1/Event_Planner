@@ -74,4 +74,14 @@ router.delete('/categories/:id', async (req, res) => {
   }
 });
 
+
+router.get("/paperbacks", (req, res) => {
+  Category.findAll({
+    // Order by title in ascending order
+    order: ["category_id"]
+  }).then((categoryData) => {
+    res.json(categoryData);
+  });
+});
+
 module.exports = router;

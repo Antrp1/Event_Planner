@@ -1,5 +1,9 @@
-const { Product } = require('../models');
+const { Product } = require("../models");
 
+
+const monitors = [
+  
+]
 const productData = [
   // keyboards
   {
@@ -173,5 +177,10 @@ const productData = [
 ];
 
 const seedProducts = () => Product.bulkCreate(productData);
+
+const filterProducts = productData.filter(
+  (product) => (product.category_id = 1)
+);
+console.log(filterProducts);
 
 module.exports = seedProducts;

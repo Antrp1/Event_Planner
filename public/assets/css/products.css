@@ -50,9 +50,11 @@ a:hover::after {
 /* Product Card Template */
 .product-container {
   padding: 0 25vw;
-  display: flex overflow-x: auto;
+  display: flex;
+  overflow-x: auto;
   scroll-behavior: smooth;
 }
+
 
 .product-card {
   padding: 20px;
