@@ -49,7 +49,7 @@ a:hover::after {
 
 /* Product Card Template */
 .product-container {
-  padding: 0 25vw;
+  padding: 0 1vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;

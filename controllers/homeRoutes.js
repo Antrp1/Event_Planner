@@ -17,16 +17,33 @@ router.get("/products", async (req, res) => {
     const productsData = await Product.findAll({
       include: [
         {
-          model: Category
-        }
-      ]
-    })
+          model: Category,
+        },
+      ],
+    });
 
-    const products = productsData.map((product) => product.get({ plain: true }));
-    console.log(products)
+    const products = productsData.map((product) =>
+      product.get({ plain: true })
+    );
+    console.log(products);
 
+    const keyboards = products.filter((product) => product.category_id === 1);
+    console.log(keyboards);
+
+    const monitors = products.filter((product) => product.category_id === 2);
+    console.log(monitors);
+
+    const headsets = products.filter((product) => product.category_id === 3);
+    console.log(headsets);
+
+    const mouse = products.filter((product) => product.category_id === 4);
+    console.log(mouse);
+    
     res.render("products", {
-      products,
+      monitors,
+      keyboards,
+      headsets,
+      mouse
     });
   } catch (err) {
     console.log(err);
