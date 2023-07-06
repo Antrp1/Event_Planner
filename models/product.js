@@ -22,7 +22,7 @@ Product.init(
     },
     stock: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     category_id: {
       type: DataTypes.INTEGER,
@@ -34,12 +34,12 @@ Product.init(
     },    
     in_stock: { //do we need this?
       type: DataTypes.VIRTUAL,
-      get: function () {
-        return this.stock > 0
-      },
-      set(value) {
-        throw new Error('No in stock');
-      }
+      // get () {
+      //   return this.stock > 0
+      // },
+      // set (value) {
+      //   throw new Error('No in stock');
+      // }
     },
     image_url: {
       type: DataTypes.STRING
