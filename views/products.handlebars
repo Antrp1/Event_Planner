@@ -68,7 +68,7 @@
             </div>
             <div class="mt-6 flex justify-center">
                 <button class="cta" id="checkout">
-                    <a href="/checkouts">
+                    <a href="/checkouts/{{monitor.id}}">
                         <span class="hover-underline-animation">Shop now</span>
                         <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                             id="arrow-horizontal">
@@ -83,7 +83,7 @@
 
 
     {{!-- Keyboards card --}}
-    <h1 id="keyboards">Keyboards</h1>
+    <h1 id="keyboards">Keyboards</h1>`
     <div style="display: flex; flex-wrap: wrap;">
         {{#each keyboards as |keyboard|}}
         <div class="product-container">
@@ -99,7 +99,7 @@
                 </div>
                 <div class="mt-6 flex justify-center">
                     <button class="cta" id="checkout">
-                        <a href="/checkouts">
+                        <a href="/checkouts/{{keyboard.id}}">
                             <span class="hover-underline-animation">Shop now</span>
                             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                                 id="arrow-horizontal">
@@ -129,7 +129,7 @@
                 </div>
                 <div class="mt-6 flex justify-center">
                     <button class="cta" id="checkout">
-                        <a href="/checkouts">
+                        <a href="/checkouts/{{headset.id}}">
                             <span class="hover-underline-animation">Shop now</span>
                             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                                 id="arrow-horizontal">
@@ -159,7 +159,7 @@
                 </div>
                 <div class="mt-6 flex justify-center">
                     <button class="cta" id="checkout">
-                        <a href="/checkouts">
+                        <a href="/checkouts/{{mice.id}}">
                             <span class="hover-underline-animation">Shop now</span>
                             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                                 id="arrow-horizontal">

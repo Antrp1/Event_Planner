@@ -38,24 +38,42 @@ router.get("/products", async (req, res) => {
 
     const mouse = products.filter((product) => product.category_id === 4);
     console.log(mouse);
-    
+
     res.render("products", {
       monitors,
       keyboards,
       headsets,
-      mouse
+      mouse,
     });
   } catch (err) {
     console.log(err);
   }
 });
 
-router.get("/checkouts", async (req, res) => {
+router.get("/checkouts/:id", async (req, res) => {
   try {
     res.render("checkout");
   } catch (err) {
     console.log(err);
   }
 });
+
+// router.get("/checkouts/", async (req, res) => {
+//   try {
+//     const productData = await Product.findByPk(req.params.id, {
+//       include: [
+//         {
+//           model: Product
+//         },
+//       ],
+//     });
+
+//     const product = productData.get({ plain: true });
+
+//     res.render("checkout");
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;

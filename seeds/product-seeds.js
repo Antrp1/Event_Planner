@@ -35,6 +35,7 @@ const productData = [
   {
     product_name: "ROYAL KLUDGE RK61",
     price: 42.49,
+    stock: 40,
     category_id: 1,
     description:
       "RK ROYAL KLUDGE RK61 Wireless 60 % Triple Mode BT5.0 / 2.4G / USB - C Mechanical Keyboard",
@@ -77,8 +78,7 @@ const productData = [
     price: 558.95,
     stock: 40,
     category_id: 2,
-    description:
-      "Dell UltraSharp U2723QE 27'' 4K UHD WLED LCD Monitor - 16: 9",
+    description: "Dell UltraSharp U2723QE 27'' 4K UHD WLED LCD Monitor - 16: 9",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688107772/Product%20Photos/Dell-U2723QE-front-view_vn4m3z.jpg",
   },
@@ -107,6 +107,7 @@ const productData = [
     product_name: "Sony WH-1000XM5",
     price: 384.99,
     stock: 15,
+    stock: 40,
     category_id: 3,
     description:
       "Dell S2722QC 27 - inch 4K USB - C Monitor - UHD(3840 x 2160) Display, 60Hz Refresh Rate, 8MS Grey - to - Grey Response Time(Normal Mode), Built -in Dual 3W Speakers, 1.07 Billion Colors - Platinum Silver",
