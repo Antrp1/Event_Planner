@@ -15,54 +15,73 @@
         <nav>
             <h1>Logo</h1>
             <ul>
-                <li><a href="#about-me">Monitors</a></li>
-                <li><a href="#projects">Keyboards</a></li>
-                <li><a href="#contact-me">Headset</a></li>
-                <li><a href="#idk">Mice</a></li>
+                <li><a href="">Monitors</a></li>
+                <li><a href="">Keyboards</a></li>
+                <li><a href="">Headset</a></li>
+                <li><a href="">Mice</a></li>
             </ul>
             <a href="#" id="contact-nav"><button>Contact</button></a>
         </nav>
     </header>
+
     <section>
-        <h1>This is a heading</h1>
+        <h1>Monitors</h1>
+
         <div class="product-container">
-            <div class="product-card">
+            <div class="product-card-m">
                 <div class="product-image">
-                    <span class="discount-tag">__% off</span>
-                    <img src="img/card1.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
+                    <img src="https://i.redd.it/pft4ldryozm51.jpg"
+                        alt="">
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">brand</h2>
                     <p class="product-short-des">product description here..</p>
-                    <span class="price">$$</span><span class="actual-price">$$</span>
+                    <span class="price">$$</span>
                 </div>
-            </div>
-            {{!-- <p class="card-title">Keychron Q2</p>
-            <p class="card-body">
-                Keychron Custom Mechanical Keyboard Fully Assembled Gateron G
-            </p>
-            <p class="footer">Price <span class="by-name"></span> <span class="date">$210</span></p> --}}
-
-            <div class="mt-6 flex justify-center">
-                <button class="cta" id="checkout">
-                <a href="/checkouts">
-                    <span class="hover-underline-animation"> Shop now </span>
-                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                        id="arrow-horizontal">
-                    </svg>
-                </a>
-                </button>
+                <div class="mt-6 flex justify-center">
+                    <button class="cta" id="checkout">
+                        <a href="/checkouts">
+                            <span class="hover-underline-animation">Shop now</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                            </svg>
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
-    {{#each threeThings as |thing|}}
-    <div>
-        <h1>{{thing}}</h1>
+
+
+    {{!-- another card --}}
+    {{#each products as |product|}}
+    <div class="product-container">
+        <div class="product-card-m">
+            <div class="product-image">
+                <img src="{{product.image_url}}">
+            </div>
+            <div class="product-nfo">
+                <p class="product-short-des">
+                    {{product.description}}
+                </p>
+                <span class="price">{{product.price}}$</span>
+            </div>
+            <div class="mt-6 flex justify-center">
+                <button class="cta" id="checkout">
+                    <a href="/checkouts">
+                        <span class="hover-underline-animation">Shop now</span>
+                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+
+        {{!-- <h1>{{product.product_name}}</h1>
+        <p>{{product.price}}</p>
+        <p>{{product.category.category_name}}</p> --}}
     </div>
     {{/each}}
 </body>
 
 
 </html>
-{{!-- <script src="/assets/js/checkout.js"></script> --}}
