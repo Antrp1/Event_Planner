@@ -3,6 +3,13 @@
 const router = require("express").Router();
 const { Product, Category } = require("../models");
 
+// var checkout = document.getElementById("link");
+// console.log(checkout);
+// function getLink() {
+//   var requestUrl = checkout;
+// }
+// console.log(requestUrl)
+
 router.get("/", async (req, res) => {
   try {
     res.render("homepage");
@@ -50,13 +57,26 @@ router.get("/products", async (req, res) => {
   }
 });
 
-router.get("/checkouts/:id", async (req, res) => {
-  try {
-    res.render("checkout");
-  } catch (err) {
-    console.log(err);
-  }
+// router.get("/checkouts/:id", async (req, res) => {
+//   try {
+//     res.render("checkout");
+//   } catch (err) {
+//     console.log(err);
+//   }
+
+// });
+
+
+router.get("/checkouts/:id", (req, res) => {
+  const miceId = req.params.id; // Retrieve the "mice.id" from the URL parameter
+
+
+  // Fetch the images related to the "miceId" or perform any necessary operations
+
+  // Render the "checkout" view template and pass the necessary data
+  res.render("checkout", { miceId: miceId }); // You can pass more data if needed
 });
+
 
 // router.get("/checkouts/", async (req, res) => {
 //   try {

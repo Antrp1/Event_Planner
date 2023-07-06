@@ -54,31 +54,31 @@
     {{!-- Monitors card --}}
     <h1 id="monitors">Monitors</h1>
     <div style="display: flex; flex-wrap: wrap;">
-    {{#each monitors as |monitor|}}
-    <div class="product-container">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="{{monitor.image_url}}">
-            </div>
-            <div class="product-nfo">
-                <p class="product-short-des">
-                    {{monitor.description}}
-                </p>
-                <span class="price">{{monitor.price}}$</span>
-            </div>
-            <div class="mt-6 flex justify-center">
-                <button class="cta" id="checkout">
-                    <a href="/checkouts/{{monitor.id}}">
-                        <span class="hover-underline-animation">Shop now</span>
-                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                            id="arrow-horizontal">
-                        </svg>
-                    </a>
-                </button>
+        {{#each monitors as |monitor|}}
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{{monitor.image_url}}">
+                </div>
+                <div class="product-nfo">
+                    <p class="product-short-des">
+                        {{monitor.description}}
+                    </p>
+                    <span class="price">{{monitor.price}}$</span>
+                </div>
+                <div class="mt-6 flex justify-center">
+                    <button class="cta" id="checkout">
+                        <a href="/checkouts/{{monitor.id}}">
+                            <span class="hover-underline-animation">Shop now</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                id="arrow-horizontal">
+                            </svg>
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
     </div>
 
 
@@ -129,7 +129,7 @@
                 </div>
                 <div class="mt-6 flex justify-center">
                     <button class="cta" id="checkout">
-                        <a href="/checkouts/{{headset.id}}">
+                        <a href="/checkouts/{{headset.id}}" id="link">
                             <span class="hover-underline-animation">Shop now</span>
                             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                                 id="arrow-horizontal">
@@ -159,7 +159,7 @@
                 </div>
                 <div class="mt-6 flex justify-center">
                     <button class="cta" id="checkout">
-                        <a href="/checkouts/{{mice.id}}">
+                        <a href="/checkouts/{{mice.id}}?id={{mice.id}}">
                             <span class="hover-underline-animation">Shop now</span>
                             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                                 id="arrow-horizontal">
