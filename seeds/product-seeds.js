@@ -157,7 +157,7 @@ const productData = [
     price: 10.79,
     stock: 60,
     category_id: 4,
-    product_description: "TECKNET Wireless Mouse, 2.4G USB Computer Mouse with 6 - Level Adjustable 3200 DPI, 30 Months Battery, Ergonomic Grips, 6 Buttons Portable for PC, Chromebook, Mac - Grey",
+    product_description: "2.4G USB Computer Mouse with 6 - Level Adjustable 3200 DPI, 30 Months Battery, Ergonomic Grips, 6 Buttons Portable for PC, Chromebook, Mac - Grey",
     image_url: "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095777/Product%20Photos/BluetoothWir_jp2y8q.jpg"
   },
   {
