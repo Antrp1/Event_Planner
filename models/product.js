@@ -27,13 +27,18 @@ Product.init(
     category_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'category',
-        key: 'id'
+        model: "category",
+        key: "id",
       },
       allowNull: false,
-    },    
-    in_stock: { //do we need this?
-      type: DataTypes.VIRTUAL,
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    in_stock: {
+      //do we need this?
+      type: DataTypes.STRING,
       // get () {
       //   return this.stock > 0
       // },
@@ -42,8 +47,8 @@ Product.init(
       // }
     },
     image_url: {
-      type: DataTypes.STRING
-    }
+      type: DataTypes.STRING,
+    },
   },
 
   {
