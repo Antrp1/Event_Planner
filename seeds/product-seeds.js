@@ -138,7 +138,7 @@ const productData = [
     stock: 25,
     category_id: 3,
     description:
-      "Apple AirPods Max Wireless Over - Ear Headphones.Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control.Bluetooth Headphones for iPhone",
+      "Apple AirPods Max Wireless Over - Ear Headphones.Active Noise Cancelling, Transparency Mode, Spatial Audio",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095402/Product%20Photos/81OMrE1LGUL._AC_UF1000_1000_QL80__xga9rh.jpg",
   },
@@ -158,7 +158,7 @@ const productData = [
     stock: 25,
     category_id: 3,
     description:
-      "Apple AirPods Pro(2nd Generation) Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency, Personalized Spatial Audio, MagSafe Charging Case, Bluetooth Headphones for iPhone",
+      "Apple AirPods Pro Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095478/Product%20Photos/Apple-AirPods-Pro-2nd-gen-hero-220907.jpg.news_app_ed_c8rgwe.jpg",
   },
@@ -169,7 +169,7 @@ const productData = [
     stock: 50,
     category_id: 4,
     description:
-      "Logitech MX Master 3S - Wireless Performance Mouse with Ultra - fast Scrolling, Ergo, 8K DPI, Track on Glass, Quiet Clicks, USB - C, Bluetooth, Windows, Linux, Chrome - Graphite",
+      "Logitech MX Master 3S - Wireless Performance Mouse Fast Scrolling, Ergo, 8K DPI, Quiet Clicks, USB - C, Bluetooth, Windows, Linux, Chrome",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095591/Product%20Photos/KmVUTGRLkDywKE7p2oiSH8-1200-80_iasqsb.jpg",
   },
@@ -179,7 +179,7 @@ const productData = [
     stock: 60,
     category_id: 4,
     description:
-      "Logitech MX Ergo Wireless Trackball Mouse Adjustable Ergonomic Design, Control and Move Text / Images / Files Between 2 Windows and Apple Mac Computers(Bluetooth or USB), Rechargeable, Graphite - Black",
+      "Logitech MX Ergo Wireless Trackball Mouse Adjustable Ergonomic Design, Control and Move Text",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095638/Product%20Photos/61L3c09ToNL._AC_UF1000_1000_QL80__utcrfe.jpg",
   },
@@ -189,7 +189,7 @@ const productData = [
     stock: 60,
     category_id: 4,
     description:
-      "Tobo Ergonomic Mouse; Tobo Vertical Wireless Mouse - Rechargeable 2.4GHz Optical Vertical Mice: 3 Adjustable DPI 800 / 1200 / 1600 Levels 6 Buttons; for Laptop; PC; Computer; Desktop; Black",
+      "Tobo Ergonomic Wireless Mouse: Rechargeable and portable. 3 adjustable DPI levels, 6 buttons.",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095692/Product%20Photos/51YVkhDvs5L_ogwygf.jpg",
   },
@@ -199,7 +199,7 @@ const productData = [
     stock: 60,
     category_id: 4,
     description:
-      "TECKNET Wireless Mouse, 2.4G USB Computer Mouse with 6 - Level Adjustable 3200 DPI, 30 Months Battery, Ergonomic Grips, 6 Buttons Portable for PC, Chromebook, Mac - Grey",
+      "TECKNET Wireless Mouse, 2.4G USB Computer Mouse with 6 - 30 Months Battery, Ergonomic Grips, 6 Buttons Portable for PC",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095777/Product%20Photos/BluetoothWir_jp2y8q.jpg",
   },
