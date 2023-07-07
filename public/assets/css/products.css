@@ -14,6 +14,7 @@ h1 {
 
 nav {
   display: flex;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: space-between;
 }
@@ -49,7 +50,7 @@ a:hover::after {
 
 /* Product Card Template */
 .product-container {
-  padding: 0 25vw;
+  padding: 0 1vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -58,6 +59,7 @@ a:hover::after {
 
 .product-card {
   padding: 20px;
+  margin-bottom: 30px;
   width: 264px;
   min-height: px;
   border-radius: 20px;
@@ -67,16 +69,6 @@ a:hover::after {
   transition: 0.4s;
 }
 
-.product-card-m {
-  padding: 20px;
-  width: 300px;
-  min-height: px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 5px 5px 6px #dadada,
-    -5px -5px 6px #f6f6f6;
-  transition: 0.4s;
-}
 
 .product-card:hover {
   translate: 0 -10px;
@@ -97,6 +89,20 @@ a:hover::after {
     inset -8px -8px 10px #cfcfcf;
 }
 
+.product-short-des {
+  padding-top: 20px;
+  margin-top: 0.5rem;
+  color: #525762;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.price {
+  float: right;
+  margin-top: 0.5rem;
+  color: #3d4149;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
 img {
   min-height: 170px;
   background-color: #c9c9c9;
