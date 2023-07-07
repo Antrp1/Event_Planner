@@ -66,42 +66,28 @@ router.get("/products", async (req, res) => {
 
 // });
 
-
 router.get("/checkouts/mice/:id", (req, res) => {
-  const miceId = req.params.id; // Retrieve the "mice.id" from the URL parameter
+  const miceId = req.params.id;
 
-
-  // Fetch the images related to the "miceId" or perform any necessary operations
-
-  // Render the "checkout" view template and pass the necessary data
-  res.render("checkout", { miceId: miceId }); // You can pass more data if needed
+  res.render("checkout", { miceId: miceId }); //
 });
 
 router.get("/checkouts/monitor/:id", (req, res) => {
-  const monitorId = req.params.id; // Retrieve the "mice.id" from the URL parameter
+  const monitorId = req.params.id;
 
-  // Fetch the images related to the "miceId" or perform any necessary operations
-
-  // Render the "checkout" view template and pass the necessary data
-  res.render("checkout", { miceId: miceId }); // You can pass more data if needed
+  res.render("checkout", { monitorId: monitorId });
 });
 
-// router.get("/checkouts/", async (req, res) => {
-//   try {
-//     const productData = await Product.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: Product
-//         },
-//       ],
-//     });
+router.get("/checkouts/keyboard/:id", (req, res) => {
+  const keyboardId = req.params.id;
 
-//     const product = productData.get({ plain: true });
+  res.render("checkout", { keyboardId: keyboardId });
+});
 
-//     res.render("checkout");
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+router.get("/checkouts/headset/:id", (req, res) => {
+  const headsetId = req.params.id;
+
+  res.render("checkout", { headsetId: headsetId });
+});
 
 module.exports = router;
