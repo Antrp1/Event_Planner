@@ -67,7 +67,7 @@ router.get("/products", async (req, res) => {
 // });
 
 
-router.get("/checkouts/:id", (req, res) => {
+router.get("/checkouts/mice/:id", (req, res) => {
   const miceId = req.params.id; // Retrieve the "mice.id" from the URL parameter
 
 
@@ -77,6 +77,14 @@ router.get("/checkouts/:id", (req, res) => {
   res.render("checkout", { miceId: miceId }); // You can pass more data if needed
 });
 
+router.get("/checkouts/monitor/:id", (req, res) => {
+  const monitorId = req.params.id; // Retrieve the "mice.id" from the URL parameter
+
+  // Fetch the images related to the "miceId" or perform any necessary operations
+
+  // Render the "checkout" view template and pass the necessary data
+  res.render("checkout", { miceId: miceId }); // You can pass more data if needed
+});
 
 // router.get("/checkouts/", async (req, res) => {
 //   try {

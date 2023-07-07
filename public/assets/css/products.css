@@ -89,6 +89,20 @@ a:hover::after {
     inset -8px -8px 10px #cfcfcf;
 }
 
+.product-short-des {
+  padding-top: 20px;
+  margin-top: 0.5rem;
+  color: #525762;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.price {
+  float: right;
+  margin-top: 0.5rem;
+  color: #3d4149;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
 img {
   min-height: 170px;
   background-color: #c9c9c9;

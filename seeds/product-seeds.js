@@ -48,7 +48,7 @@ const productData = [
     stock: 20,
     category_id: 1,
     description:
-      "Razer Pro Type Ultra Wireless Mechanical Keyboard: Silent, Linear Switches - Ergonomic Design - HyperSpeed Technology - Connect up to 4 Devices - Fully Programmable Keys & Smart Controls",
+      "Razer Pro Type Ultra Wireless Mechanical Keyboard: Silent, Linear Switches - Ergonomic Design",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688108132/Product%20Photos/61Zl5N5yY7L_nmzqg6.jpg",
   },
@@ -59,7 +59,7 @@ const productData = [
     stock: 30,
     category_id: 2,
     description:
-      "LG 38WN95C - W Monitor 38'' 21: 9 Curved UltraWide QHD + (3840 x 1600) Nanio IPS Display, Thunderbolt 3, 1ms Response Time, 144Hz Refresh Rate, NVIDIA G - SYNC",
+      "LG 38WN95C-W Monitor: 38-inch Curved UltraWide QHD+ Display with Thunderbolt 3, Fast Response Time, and Smooth Refresh Rate",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095004/Product%20Photos/medium01_hazgjg.jpg",
   },
@@ -88,7 +88,7 @@ const productData = [
     stock: 40,
     category_id: 2,
     description:
-      "Dell S2722QC 27-inch 4K USB-C Monitor - UHD (3840 x 2160) Display, 60Hz Refresh Rate, 8MS Grey-to-Grey Response Time (Normal Mode), Built-in Dual 3W Speakers, 1.07 Billion Colors - Platinum Silver",
+      "Dell S2722QC 27-inch 4K Monitor: Ultra HD Display, 60Hz Refresh Rate, Dual Speakers - Platinum Silver",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688107625/Product%20Photos/s2722qc_cfp_00000ff090_gy_dcg6yk.jpg",
   },
@@ -98,7 +98,7 @@ const productData = [
     stock: 40,
     category_id: 2,
     description:
-      "ASUS ProArt Display PA278QV 27” WQHD (2560 x 1440) Monitor, 100% sRGB/Rec. 709 ΔE < 2, IPS, DisplayPort HDMI DVI-D Mini DP, Calman Verified, Anti-glare, Tilt Pivot Swivel Height Adjustable, Black",
+      "ASUS ProArt Display PA278QV 27 WQHD Monitor: High-quality visuals, vibrant colors, adjustable design - Black",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688107490/Product%20Photos/6424478_sd_c2sneq.jpg",
   },
@@ -110,7 +110,7 @@ const productData = [
     stock: 40,
     category_id: 3,
     description:
-      "Dell S2722QC 27 - inch 4K USB - C Monitor - UHD(3840 x 2160) Display, 60Hz Refresh Rate, 8MS Grey - to - Grey Response Time(Normal Mode), Built -in Dual 3W Speakers, 1.07 Billion Colors - Platinum Silver",
+      "Sony WH-1000XM5: Premium wireless headphones with top-notch sound and advanced noise cancellation.",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095298/Product%20Photos/6145c1d32e6ac8e63a46c912dc33c5bb_qrypd6.jpg",
   },
@@ -128,7 +128,7 @@ const productData = [
     stock: 25,
     category_id: 3,
     description:
-      "Bose Headphones 700, Noise Cancelling Bluetooth Over - Ear Wireless Headphones with Built - In Microphone for Clear Calls and Alexa Voice Control, Black",
+      "Bose Headphones 700, Noise Cancelling Bluetooth Over - Ear Wireless Headphones with Built - In Microphone for Clear Calls",
     image_url:
       "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688106772/Product%20Photos/g018NC700TB-o_other0_geqww4.jpg",
   },
