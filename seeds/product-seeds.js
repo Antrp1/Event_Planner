@@ -63,7 +63,7 @@ const productData = [
     stock: 40,
     category_id: 2,
 
-   description: "31.5 inch 4K UHD WLED LCD Monitor - 16:9'",
+    description: "31.5 inch 4K UHD WLED LCD Monitor - 16:9'",
     image_url: "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688095037/Product%20Photos/monitor-u3223qe-gallery-1_ubhnes.jpg"
 
   },
@@ -114,17 +114,8 @@ const productData = [
     price: 379.0,
     stock: 25,
     category_id: 3,
-    image_url:
-      "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688106772/Product%20Photos/g018NC700TB-o_other0_geqww4.jpg",
 
-  },
-  {
-    product_name: "Bose Noise Cancelling Headphones 700",
-    price: 379.0,
-    stock: 25,
-    category_id: 3,
-
-  description: "Bose Headphones 700, Noise Cancelling Bluetooth Over - Ear Wireless Headphones with Built - In Microphone for Clear Calls and Alexa Voice Control, Black",
+    description: "Bose Headphones 700, Noise Cancelling Bluetooth Over - Ear Wireless Headphones with Built - In Microphone for Clear Calls and Alexa Voice Control, Black",
     image_url: "https://res.cloudinary.com/di3nk6hyq/image/upload/v1688106772/Product%20Photos/g018NC700TB-o_other0_geqww4.jpg"
 
   },
