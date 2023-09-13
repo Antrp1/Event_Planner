@@ -43,7 +43,7 @@ https://github.com/Antrp1/Event_Planner.git
 
 ## Screenshot
 
-![plot](.)
+![plot](./public/assets/images/Screenshot%202023-07-06%20at%206.53.36%20PM.png)
 
 ## Credits 
 
@@ -56,4 +56,4 @@ List of collaborators and their GitHub profiles:
 
 ## Link to Deployed Application 
 
-
+https://obscure-plains-49755-cc46b608f24f.herokuapp.com/
