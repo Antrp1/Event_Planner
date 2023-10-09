@@ -4,7 +4,8 @@
   "description": "i created a branch yall",
   "main": "server.js",
   "engines": {
-    "node": "16.20.0"
+    "node": "16.20.0",
+    "npm": "7.10.0"
   },
   "scripts": {
     "build": "concurrently \"node server.js\" \"node seeds\"",
