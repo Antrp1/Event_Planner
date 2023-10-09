@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "i created a branch yall",
   "main": "server.js",
+  "engines": {
+    "node": "16.20.0"
+  },
   "scripts": {
+    "build": "concurrently \"node server.js\" \"node seeds\"",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "nodemon server.js",
